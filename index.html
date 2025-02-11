@@ -1,0 +1,52 @@
+<!-- O Bootstrap poder ser instalado de três formas diferentes: Via CDN (CONTENT DELIVERY NETWORK, Em português REDE DE FORNECIMENTO),baixando os arquivos diretamente ou instalando via NPM (NODE PACKAGE MARNAGER) -->
+
+<!-- 1. Instalação via CDN -->
+
+<!-- A maneira mais simples de usar o Bootstrap é incluir o link para arquivos CSS e JS diretamente no seu HTML. Com isso, vocÊ pode começar a usar o Bootstrap sem necssidade de baixar nada
+ 
+Para isso Adicione <head> do seu arquivo do seu arquivo HTML para incluir o CSS do Bootstrap e no final <body> para incluir o JavaScript-->
+
+<a href="index-cdn.html">CDN</a>
+
+<!-- 2. Instalação Baixando os arquivos -->
+    
+<!-- Instalação Baixando os Arquivos
+Você pode baixar os arquivos do Bootstrap e usá-los localmente no seu projeto. Siga estes passos:
+
+Acesse o site do Bootstrap: https://getbootstrap.com/.
+Clique em Download e escolha a opção Compiled CSS and JS (arquivos CSS e JS compilados).
+Extraia o conteúdo do arquivo ZIP para o seu projeto.
+Inclua os arquivos CSS e JS no seu HTML.
+Exemplo de como incluir os arquivos no HTML: -->
+
+<a href="index-npm.html">NPM</a>
+
+<!-- 3. Instalação via NPM -->
+
+<!-- Instalação via NPM (Node Package Manager)
+Se você está trabalhando com Node.js e prefere gerenciar as dependências do seu projeto com o npm, siga os passos abaixo:
+
+Inicialize o projeto (se ainda não tiver feito isso):
+
+npm init -y
+
+Instale o Bootstrap via npm:
+
+npm install bootstrap
+
+Após a instalação, você pode incluir o Bootstrap no seu arquivo JavaScript ou CSS, dependendo de como você está estruturando seu projeto.
+
+Exemplo para importar no seu arquivo JavaScript (se você estiver usando Webpack ou algum bundler):
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+Ou, se você preferir usar diretamente o arquivo CSS e JS em seu HTML, basta referenciar o diretório onde o npm instala o Bootstrap:
+
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+Esse método é útil se você estiver gerenciando muitas dependências ou trabalhando com ferramentas de build como Webpack, Parcel, ou outros. -->
+
+
+

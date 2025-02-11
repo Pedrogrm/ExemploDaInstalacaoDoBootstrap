@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Bootstrap com CDN</title>
+  
+  <!-- Inclusão do CSS do Bootstrap via CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Meu Projeto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contatos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Container principal -->
+  <div class="container mt-5">
+    <h1 class="text-center">Bem-vindo ao meu projeto com Bootstrap!</h1>
+    <p class="lead text-center">Este projeto utiliza o Bootstrap via CDN para estilizar a página.</p>
+
+    <!-- Botão -->
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Clique Aqui</button>
+    </div>
+
+    <hr>
+
+    <!-- Cards -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Este é um exemplo de um card simples usando Bootstrap.</p>
+            <a href="#" class="btn btn-primary">Ir para Card 1</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Outro card com a mesma estrutura.</p>
+            <a href="#" class="btn btn-secondary">Ir para Card 2</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Mais um card para demonstrar a flexibilidade do Bootstrap.</p>
+            <a href="#" class="btn btn-success">Ir para Card 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Tabela -->
+    <h3>Minha Tabela de Exemplo</h3>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Cidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>João</td>
+          <td>28</td>
+          <td>São Paulo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Maria</td>
+          <td>22</td>
+          <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ana</td>
+          <td>32</td>
+          <td>Belo Horizonte</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Formulário -->
+    <h3>Formulário de Contato</h3>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+  </div>
+
+  <!-- Inclusão de Scripts do Bootstrap via CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
+
+<!-- Explicação do Código:
+
+Barra de Navegação (navbar): Um componente do Bootstrap para criar menus de navegação responsivos.
+
+Cards: Um exemplo com três cards usando as classes do Bootstrap (card, card-body, btn).
+
+Tabela: Uma tabela estilizada com a classe table do Bootstrap, além de classes extras como table-bordered e table-striped.
+
+Formulário: Um formulário simples com campos para nome, e-mail e mensagem, usando as classes de formulário do Bootstrap (form-group, form-control, etc.).
+
+O que acontece no seu navegador:
+Ao abrir o index.html, você verá uma página com uma barra de navegação, cards bonitos e estilizados, uma tabela responsiva e um formulário de contato.
+
+Todo esse layout e funcionalidade vem das classes CSS e JavaScript do Bootstrap, que estão sendo carregadas diretamente do CDN.
+
+Testar no Navegador:
+Basta abrir o arquivo index.html no seu navegador, e você verá todos os componentes estilizados e funcionais! Se você estiver no VS Code, pode usar a extensão Live Server para ver as mudanças automaticamente. -->
